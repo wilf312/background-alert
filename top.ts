@@ -7,7 +7,7 @@ body {
   background-repeat: repeat;
   background-size: 320px 275px;
 }
-`, {"headers": {"content-type": "text/html; charset=utf-8"}});
+`, {"headers": {"content-type": "text/css; charset=utf-8"}});
 
 serve({
   "/": () => page("red"),
