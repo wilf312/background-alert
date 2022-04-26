@@ -20,7 +20,7 @@ const page = (color: string = "red"): Response => {
   const key = isDev a.searchParams.get('type') : location.host
   if (key.indexOf('deno') != -1) {
     return createResponse(production('black'))
-  } else if (key.indexOf('local') != -1)) {
+  } else if (key.indexOf('local') != -1) {
     return createResponse(production('white'))
   }
   
