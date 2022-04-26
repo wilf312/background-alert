@@ -17,7 +17,7 @@ const page = (color: string = "red"): Response => {
   const a = new URL(location.href)
   const isDev = a.searchParams.get('dev') === 'dev'
   
-  const key = isDev a.searchParams.get('type') : location.host
+  const key = isDev ? a.searchParams.get('type') : location.host
   if (key.indexOf('deno') != -1) {
     return createResponse(production('black'))
   } else if (key.indexOf('local') != -1) {
